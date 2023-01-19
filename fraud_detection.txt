@@ -86,7 +86,7 @@ choices:
 
 metrics:recall, precision. weighted f score
 
-experiment: choose a threshold to maximize recall subject to precision over 95%
+experiment: choose a threshold to maximize precision subject to recall over 95%
 
 reward:
 

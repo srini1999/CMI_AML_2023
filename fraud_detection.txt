@@ -1,0 +1,98 @@
+Problem Framing
+
+Current State: 
+
+Qualitative: Frauds => loss of trust in banks => loss of customers
+Quantitative: Insurance of 5 lakhs to be paid for each case of fraud causing loss in revenue
+
+Objectives:
+
+Qualitative: Build a model that can flag suspicious transactions even if it catches some false flags. Contact the customer to verify if the transaction was indeed done by them.
+Quantitative: High recall over 98% can save about 10 million dollars in revenue annually and have reduce customer loss below 5%
+
+Cost Benefit tradeoff:
+
+Qualitative: 
+Cost of error: 
+FN => loss of revenue and customer trust
+FP => a few transactions get declined to the annoyance of customer, a verification call to the customer can prevent this but might still annoy the customer slightly
+
+Benefits of Correct prediction:
+TP: Keeps customer happy and increases trust in bank. Also saves money for bank
+TN: Everything runs smoothly
+
+Quantitative:
+
+1% TP => Customer loss below 0.2%, 0.4% lower loss
+1% FP => Customer loss increases by 0.01%
+1%FN => 0.05% loss in revenue, Customer loss increases by .5%
+1% TN = Business as usual
+
+Constrants:
+
+Qualitative:
+
+Requires high recall predictor. False positives significantly affects customer satisfaction and bleeds revenue
+
+Qualitative:
+
+Over 98% recall required
+
+Desired State:
+
+Qualitative:
+
+Want most of the fraudulent transactions detected with minimal instrusion to customer.
+
+Quantitative:
+Keep recall over 98% while maintaining precision over 90 percent to minimize customer service personnel cost and reduce customer annoyance
+
+Why ML?
+
+Best non-ML alternative hypothesis:
+
+Put multi factor authentication to ensure safety => customer convenience is sacrificed => loss of customer to competitors.
+
+ML value propositon hypothesis:
+
+Significant improvement in fraud detection with minimal intrusion to the customer
+
+ML feasibility hypothesis:
+
+data: labelled samples of about a million transactions available.
+
+model: state of the art review suggests promising high recall models are available
+
+
+ML Solution Design
+
+data: 
+
+choices: transactions data
+metrics: label imbalance
+experiment: randomized 70/15/15 train/validation/test split
+
+model:
+
+choices: pr(fraud)
+metrics: recall
+experiment: Try logistic regression, decision trees, random forest etc. train these benchmark models (from simpler to more complex) using train data. Validate and tune using validation data, select the model with best recall
+
+action: 
+
+choices: 
+>if pr(fraud)>threshold, contact customer to confirm, decline transaction if the person in unavailable.
+>decline if pr(fraud)> threshold
+
+metrics:recall, precision. weighted f score
+
+experiment: choose a threshold to maximize recall subject to precision over 95%
+
+reward:
+
+choices: decrease in frauds, cost of misclassification
+
+metrics: customer complaints, loss due to fraud.
+
+experiment: shadow test, A/B test
+

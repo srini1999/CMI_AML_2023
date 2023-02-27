@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/5149628ce98a438b9825efe16f24daa0/artifacts
+deleted_time: 1677532480154
+end_time: 1677532448014
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 5149628ce98a438b9825efe16f24daa0
+run_name: big-snail-0
+run_uuid: 5149628ce98a438b9825efe16f24daa0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677532446728
+status: 4
+tags: []
+user_id: srinivas

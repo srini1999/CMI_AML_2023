@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/32fcbff55a0346d48343c4d60bf739fb/artifacts
+end_time: 1677533691612
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 32fcbff55a0346d48343c4d60bf739fb
+run_name: worried-hawk-671
+run_uuid: 32fcbff55a0346d48343c4d60bf739fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677533690399
+status: 3
+tags: []
+user_id: srinivas

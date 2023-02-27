@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/be40a797151d4bee9f1dd777991cb7c0/artifacts
+deleted_time: 1677534262019
+end_time: 1677533912140
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: be40a797151d4bee9f1dd777991cb7c0
+run_name: selective-flea-414
+run_uuid: be40a797151d4bee9f1dd777991cb7c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677533910695
+status: 3
+tags: []
+user_id: srinivas

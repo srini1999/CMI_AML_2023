@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/3ef526753716446d99254c6bcbaed32e/artifacts
+deleted_time: 1677533122933
+end_time: 1677532510341
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 3ef526753716446d99254c6bcbaed32e
+run_name: flawless-ant-803
+run_uuid: 3ef526753716446d99254c6bcbaed32e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677532509232
+status: 4
+tags: []
+user_id: srinivas

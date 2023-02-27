@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0746844fa18f47bdb8aab885fcfdb71b/artifacts
+end_time: 1677533685348
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0746844fa18f47bdb8aab885fcfdb71b
+run_name: overjoyed-croc-517
+run_uuid: 0746844fa18f47bdb8aab885fcfdb71b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677533684027
+status: 3
+tags: []
+user_id: srinivas

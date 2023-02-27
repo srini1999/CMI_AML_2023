@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/c4be374b9df443ad9108d93723d0af0e/artifacts
+deleted_time: 1677533122932
+end_time: 1677532922753
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: c4be374b9df443ad9108d93723d0af0e
+run_name: debonair-penguin-443
+run_uuid: c4be374b9df443ad9108d93723d0af0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677532921078
+status: 4
+tags: []
+user_id: srinivas

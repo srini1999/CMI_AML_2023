@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/97370c00e0c34e16b2368124881ae40d/artifacts
+deleted_time: 1677534262021
+end_time: 1677533882821
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 97370c00e0c34e16b2368124881ae40d
+run_name: chill-bird-388
+run_uuid: 97370c00e0c34e16b2368124881ae40d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677533881409
+status: 3
+tags: []
+user_id: srinivas

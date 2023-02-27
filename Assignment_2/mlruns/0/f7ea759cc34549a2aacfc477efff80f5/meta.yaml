@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/f7ea759cc34549a2aacfc477efff80f5/artifacts
+deleted_time: 1677534262020
+end_time: 1677533893206
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: f7ea759cc34549a2aacfc477efff80f5
+run_name: casual-skunk-17
+run_uuid: f7ea759cc34549a2aacfc477efff80f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677533892070
+status: 3
+tags: []
+user_id: srinivas

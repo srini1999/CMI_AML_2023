@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3eca759388a74cd89dcd7f774527a416/artifacts
+end_time: 1677534295300
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3eca759388a74cd89dcd7f774527a416
+run_name: spiffy-koi-51
+run_uuid: 3eca759388a74cd89dcd7f774527a416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677534294206
+status: 3
+tags: []
+user_id: srinivas

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/ec0806b04c614701a184414c736fc472/artifacts
+deleted_time: 1677533122934
+end_time: 1677532805051
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: ec0806b04c614701a184414c736fc472
+run_name: unruly-shrike-992
+run_uuid: ec0806b04c614701a184414c736fc472
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677532804044
+status: 4
+tags: []
+user_id: srinivas

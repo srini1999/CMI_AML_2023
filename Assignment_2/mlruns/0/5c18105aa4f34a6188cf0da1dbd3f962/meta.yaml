@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5c18105aa4f34a6188cf0da1dbd3f962/artifacts
+end_time: 1678836767333
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5c18105aa4f34a6188cf0da1dbd3f962
+run_name: bold-crow-233
+run_uuid: 5c18105aa4f34a6188cf0da1dbd3f962
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678836765495
+status: 3
+tags: []
+user_id: srinivas

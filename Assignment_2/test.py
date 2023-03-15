@@ -1,8 +1,7 @@
 from score import score
 import numpy as np
 import requests
-import json
-import subprocess
+import time
 import os
 
 def test_score():
@@ -41,10 +40,11 @@ def test_score():
 
 def test_flask():
     os.system('python app.py &')
+    time.sleep(5)
     text = "Sure Shot INTRADAY & MULTIBAGGER Stock Tips - Earn 120% PROFIT in 4 Month https://bit.ly/NSE_7 - Click on Link & Send 'JOIN FREE' Message on WhatsApp EXPTRADE"
     y = requests.post("http://127.0.0.1:8080/", json = {"text": text})
     print(y.json())
 
 
-test_score()
+# test_score()
 test_flask()

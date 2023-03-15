@@ -46,5 +46,5 @@ def test_flask():
     print(y.json())
 
 
-# test_score()
+test_score()
 test_flask()

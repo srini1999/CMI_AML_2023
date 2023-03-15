@@ -12,7 +12,7 @@ def split_into_lemmas(message):
     words = TextBlob(message).words
     return [word.lemma for word in words]
 
-def score(text, model, threshold = 0.5):
+def score(text, model = "runs:/5c18105aa4f34a6188cf0da1dbd3f962/SVM_69", threshold = 0.5):
     subprocess.Popen('mlflow ui', shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     best_model = mlflow.sklearn.load_model(model)
     messages = pd.read_csv('data/train.csv', sep='\t', quoting=csv.QUOTE_NONE, index_col=False)

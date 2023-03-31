@@ -8,7 +8,7 @@ import pytest
 
 @pytest.fixture
 def params():
-    ip = "Sure Shot INTRADAY & MULTIBAGGER Stock Tips - Earn 120% PROFIT in 4 Month https://bit.ly/NSE_7 - Click on Link & Send 'JOIN FREE' Message on WhatsApp EXPTRADE"
+    ip = "EASTENDERS TV Quiz. What FLOWER does DOT compare herself to? D= VIOLET E= TULIP F= LILY txt D E or F to 84025 NOW 4 chance 2 WIN £100 Cash WKENT/150P16+"
     model = "runs:/5c18105aa4f34a6188cf0da1dbd3f962/SVM_69"
     threshold = 0.7
     prediction, propensity = score(ip, model, threshold)
@@ -32,14 +32,14 @@ def test_dom(params):
 
 #Threshold of 0 always labels spam
 def test_sanity1():
-    ip = "Sure Shot INTRADAY & MULTIBAGGER Stock Tips - Earn 120% PROFIT in 4 Month https://bit.ly/NSE_7 - Click on Link & Send 'JOIN FREE' Message on WhatsApp EXPTRADE"
+    ip = "EASTENDERS TV Quiz. What FLOWER does DOT compare herself to? D= VIOLET E= TULIP F= LILY txt D E or F to 84025 NOW 4 chance 2 WIN £100 Cash WKENT/150P16+"
     model = "runs:/5c18105aa4f34a6188cf0da1dbd3f962/SVM_69"
     prediction, propensity = score(ip, model, 0)
     assert prediction == True
 
 #Threshold of 1 always labels not spam
 def test_sanity2():
-    ip = "Sure Shot INTRADAY & MULTIBAGGER Stock Tips - Earn 120% PROFIT in 4 Month https://bit.ly/NSE_7 - Click on Link & Send 'JOIN FREE' Message on WhatsApp EXPTRADE"
+    ip = "EASTENDERS TV Quiz. What FLOWER does DOT compare herself to? D= VIOLET E= TULIP F= LILY txt D E or F to 84025 NOW 4 chance 2 WIN £100 Cash WKENT/150P16+"
     model = "runs:/5c18105aa4f34a6188cf0da1dbd3f962/SVM_69"
     prediction, propensity = score(ip, model, 1)
     assert prediction == False
@@ -53,7 +53,7 @@ def test_ham():
 def test_flask():
     os.system('python app.py>/dev/null 2>&1 &')
     time.sleep(5)
-    text = "Sure Shot INTRADAY & MULTIBAGGER Stock Tips - Earn 120% PROFIT in 4 Month https://bit.ly/NSE_7 - Click on Link & Send 'JOIN FREE' Message on WhatsApp EXPTRADE"
+    text = "EASTENDERS TV Quiz. What FLOWER does DOT compare herself to? D= VIOLET E= TULIP F= LILY txt D E or F to 84025 NOW 4 chance 2 WIN £100 Cash WKENT/150P16+"
     y = requests.post("http://127.0.0.1:8080/", json = {"text": text})
     y = dict(y.json())
     assert y["prediction"] == 'spam'
